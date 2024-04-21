@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order_summary</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+            .container
+            {
+                width: 100vw;
+                height: 100vh;
+                background-color: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,205,1) 100%);
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+            .card
+            {
+                width: 30%;
+                height: 80%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+
+            }
+            .plan
+           {
+        
+            padding: 2%;
+            display: flex;
+            border-radius: 7px;
+            align-content: space-around;
+            background-color: rgb(169, 169, 225);
+            margin: 2%;
+            
+           }
+            #books{
+                width: 100%;
+                height: 30%;
+                position: relative;
+                top: -6%;
+                
+               
+
+                
+            }
+            #smiley
+            {
+                height: 70%;
+                width: 20%;
+                border-radius: 50%;
+               
+
+            }
+           
+            h3,p{
+               
+                text-align: center;
+            }
+           .info
+           {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            align-items: center;
+            
+
+           }
+           #proceed
+           {
+            background-color: #14073c;
+            color: white;
+            text-align: center;
+            padding: 5%;
+            border-radius: 5px;
+            margin: 2%;
+            position: relative;
+            margin-top: 5%;
+
+            
+            
+            
+           }
+          #cancel
+          {
+            text-decoration: none;
+            margin-left: 35%;
+            margin-top: 5%;
+          }
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+                <img src="bookshopping.avif" alt="books" id="books">
+                <div class="section2">
+                    <h3>Order Summary</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum accusamus, provident laborum dolor saepe, esse, magni ea voluptate eligendi vel fugit sed illo repellendus doloribus?</p>
+                    <div class="plan">
+                       <div class="info">
+                        <img src="annualplan.png" alt="smiley" id="smiley">
+                        <pre>Annual Plan
+$99.9/year
+                        </pre>
+                        
+                    </div>
+
+                     <a href="Change" id="change">Change</a>
+                </div>
+            </div>
+            
+                
+                <input type="button" id="proceed" value="Proceed to Payment">
+                
+                 <label for="proceed"></label>
+                 <a href="cancel" id="cancel">Cancel Order</a>
+            
+                   
+                    
+             </div>
+    
+    </div>
+</body>
+</html>
