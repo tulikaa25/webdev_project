@@ -1,0 +1,137 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body_container
+{
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.body_container::before
+{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("lapanim.png");
+    background-size: contain;
+    
+    
+    opacity: 0.7; /* Adjust the opacity value (0 to 1) */
+     z-index: -1;/* Ensure the pseudo-element is behind the content */
+    animation: slide 15s linear infinite ;
+    
+    animation-fill-mode: both;
+
+}
+
+
+.container {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+   
+}
+
+
+h1{
+    color: black;
+   
+    font-size: 3.5rem;
+    font-family: "Inter","Noto+Sans","Roboto+Condensed","Roboto+Slab";
+    color: rgba(43, 37, 43, 0.848);
+    margin-top: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.main_container
+{  
+     
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow:  0 0 25px rgb(62, 61, 61);
+    padding: 1.5rem;
+}
+
+#user_icon
+{
+    height: 1.8rem;
+}
+#lock_icon
+{
+    height: 1.5rem;
+   margin-left: 0.4rem;
+
+}
+.mail_box input,.pass_box input{
+    padding: 0.5rem; 
+     width: 100%;
+  border-color: transparent;
+
+}
+.mail_box,.pass_box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 1px solid black;
+    padding: 0.7rem;
+    background-color: white;
+     
+}
+input::placeholder
+{
+    color: rgb(182, 183, 185);
+    
+}
+.loginb
+{
+    background-color: rgb(34, 165, 201);
+    color: white;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid rgb(34, 165, 201);
+}
+.ques
+{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+}
+.ques a
+{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
+}
+.options
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.options img
+{
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+@keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: -100% 0; } /* Slide the background image to the right */
+}

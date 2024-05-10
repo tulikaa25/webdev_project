@@ -1,0 +1,115 @@
+
+       *{
+            margin: 0;
+            padding: 0;
+           box-sizing: border-box;
+        }
+       body
+       {
+        width: 100%;
+        height: 100%;
+       }
+            .container
+            {
+                min-width: max-content;
+                height: 100%;
+                background-color: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,205,1) 100%);
+              display: flex;
+              justify-content: center;
+              padding: 2rem;
+            }
+            .card
+            {
+                 width: 20rem;
+                height: 80%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                border: 1px solid rgb(168, 145, 145);
+                
+            
+
+            }
+            .plan
+           {
+        
+            padding: 2%;
+            display: flex;
+            border-radius: 7px;
+            align-content: space-between;
+            background-color: rgb(169, 169, 225);
+            margin: 2%;
+            
+           }
+            #books{
+                
+                position: relative; 
+                height: 15rem;
+                width: 20rem;
+                border-top-left-radius: 10%;
+                border-top-right-radius: 10%;
+                margin: auto;
+                
+           }
+            .section3
+            {
+                display: flex;
+                flex-direction: row;
+                padding: 1rem;
+                
+            }
+            #smiley
+            {
+                height: 70%;
+                width: 20%;
+                border-radius: 50%;
+               
+
+            }
+            .section2
+            {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+           
+            h3,p{
+               
+                text-align: center;
+                
+            }
+           .info
+           {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            align-items: center;
+            
+
+           }
+           .section4
+           {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            ;
+           }
+           #proceed
+           {
+            background-color: #14073c;
+            color: white;
+            text-align: center;
+            padding: 5%;
+            border-radius: 5px;
+            }
+          #cancel
+          {
+            text-decoration: none;
+           padding-bottom:0.5rem;
+            
+          }
+        

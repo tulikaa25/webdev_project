@@ -1,0 +1,140 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body_container
+{
+    height: 100%;
+    width: 100%;
+    
+}
+.container{
+    height: 100%;
+    width: 50%;
+    background-color: #efe4e4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    margin-top: 10rem;
+    box-shadow: 5px 5px 10px 2px rgb(203, 198, 198);
+  
+    
+    
+}
+.leftbox
+{
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+.header_lb
+{
+    display: flex;
+    
+    justify-content: space-between;
+}
+  .heading
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+img
+{
+    width: 1.5rem;
+    height: 2rem;
+    object-fit: cover;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 5rem;
+   
+}
+.icons
+{
+    display: flex;
+    gap: 0.5rem;
+    
+
+}
+.userdetails
+{
+    display: flex;
+    flex-direction: column;
+   gap: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+ 
+   
+}
+input
+{
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background-color: rgb(233, 227, 227);
+    border: 1px solid white;
+}
+#signin,#signup
+{
+     
+     border-radius: 2rem;
+     padding: 0.5rem;
+     background-color: #f34870;
+     
+    
+     color: white;
+     border: 1px solid white;
+}
+#signin:active {
+    background-color:#cf8697 ;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+input[type='checkbox'] {
+    accent-color:#f34870 ;
+}
+/* Default label color */
+#remember_label {
+    color: black;
+  }
+  
+/* label color when checkbox is checked */
+  #remember:checked + #remember_label 
+  {
+    color: #f34870; 
+  }
+  #signup:active
+  {
+     background-color: #cf8697;
+  }
+
+#forgot
+{
+    text-decoration: none;
+    color: rgb(96, 95, 95);
+}
+.footer #forgot:hover
+{
+    color: black;
+}
+.rightbox
+{
+    background-color:#f34870 ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+}
+.headerrb
+{
+    font-size: xx-large;
+}
