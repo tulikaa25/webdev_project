@@ -1,0 +1,109 @@
+:root{
+    --white : #FFFFFF;
+    --pink-color:#cf088c;
+    --dark-blue: #03091D;
+    --light-blue:#6EE8FC;
+      --violet:#181125;
+     color: var(--white);
+     font-family: 'Inter', sans-serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: none;
+    /* background: var(--dark-blue); */
+    background: var(--violet);
+    padding: 5rem;
+    
+   
+}
+
+.wrapper
+{
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+   
+}
+.GradientBorder {
+    position: relative;
+    background: #020117;
+    padding: 2rem;
+  }
+  .GradientBorder::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    z-index: -1;
+  }
+  .GradientBorder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    z-index: -2;
+    filter: blur(40px);
+  }
+
+h2{
+   
+    padding: 1rem;
+   
+    max-width: 50%;
+}
+a{
+    color : #3D8BFF
+}
+#getting-started
+{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    
+}
+
+#getting-started ol{
+margin-left: 1rem;
+
+}
+#getting-started li{
+   line-height: 2rem;
+}
+#guidelines, #documentation, #communication,#tools-resources,#recognition
+{
+    /* padding-top: 5rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#faq
+{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   padding-bottom: 2rem;
+
+}
+#tools-resources li
+{
+    margin-left: 1rem
+}
