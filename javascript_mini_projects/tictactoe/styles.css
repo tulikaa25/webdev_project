@@ -1,0 +1,58 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+    text-align: center;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 1rem;
+}
+.box
+{
+   width: 100px;
+   height: 100px;
+   border-radius: 20px;
+   font-size: xx-large;
+   color: red;
+   background-color: hsl(0, 0%, 100%);
+   border-style: none;
+}
+.game{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+}
+#winmsg
+{
+    color: red;
+}
+#resetbtn
+{
+    padding: 1rem;
+
+}
+#newbtn,#resetbtn
+{
+    padding: 1rem;
+    border: 1px solid black;
+    width: 20%;
+    background-color:rgb(122, 92, 148);
+    margin: auto;
+    margin-block: 1rem;
+    border-radius: 2rem;
+}
+.hide
+{
+    display: none;
+}
